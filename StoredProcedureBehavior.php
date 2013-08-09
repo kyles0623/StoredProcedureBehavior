@@ -105,6 +105,7 @@ class StoredProcedureBehavior extends ModelBehavior {
 		$stmt = sqlsrv_query($connection, $sql,$values);
 		if($stmt == false)
 		{
+			return -1;
 			//Implement Own Error Statement
 			// use sqlsrv_errors() to display errors
 		}
